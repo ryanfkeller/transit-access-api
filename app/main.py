@@ -2,9 +2,9 @@
 
 from fastapi import FastAPI
 from dotenv import load_dotenv
-from app.routes import router as api_router
-
 load_dotenv()
+
+from app.routes import router as api_router
 
 app = FastAPI(
     title= "Transit Access API",

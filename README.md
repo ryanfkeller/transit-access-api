@@ -77,7 +77,8 @@ Tests will live under the `/tests` directory, and will cover core logic and rout
 
 This API relies on open datasets, including:
 
-- [OpenStreetMap](https://www.openstreetmap.org) — for geocoding and location data  
+- [OpenStreetMap](https://www.openstreetmap.org) — for geocoding and location data
+  - © OpenStreetMap contributors. Data available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/).
 - [Transitland](https://transit.land/) — registry of GTFS feeds  
 - [LA Metro GTFS](https://developer.metro.net/gtfs/) — example feed for scoring  
 
