@@ -2,7 +2,9 @@
 
 from app.services.geocoder import geocode_address
 from app.models.score import ScoreResult
-from app.core.logging import logger
+from app.core.log_utils import get_logger
+
+logger = get_logger(__name__)
 
 def get_mock_score(address:str) -> ScoreResult :
     coords = geocode_address(address)

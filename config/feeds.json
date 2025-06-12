@@ -1,0 +1,6 @@
+{
+    "la_metro": {
+        "bus": "data/la_metro/gtfs_bus.zip",
+        "rail": "data/la_metro/gtfs_rail.zip"
+    }
+}

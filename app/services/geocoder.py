@@ -4,12 +4,14 @@ import os
 import httpx
 from typing import Optional
 from app import __version__
-from app.core.config import get_required_env
-from app.core.logging import logger
+from app.core.settings import settings
+from app.core.log_utils import get_logger
+
+logger = get_logger(__name__)
 
 def geocode_address(address: str) -> Optional[tuple[float, float]]:
-    base_url = get_required_env("OSM_API_BASE")
-    contact_email = get_required_env("CONTACT_EMAIL")
+    base_url = settings.osm_api_base
+    contact_email = settings.contact_email
     params = {
         "q": address,
         "format": "json",
